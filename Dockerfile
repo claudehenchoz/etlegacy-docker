@@ -19,6 +19,7 @@ RUN apt-get update && apt-get install -y \
 RUN curl https://www.etlegacy.com/download/file/87 | tar xvz; mv etlegacy-v2.75-x86_64 etlegacy
 RUN curl -o temp.exe http://trackbase.eu/files//et/full/WolfET_2_60b_custom.exe; 7z e temp.exe -oetlegacy/etmain etmain/pak*.pk3; rm temp.exe
 RUN echo "set sv_allowDownload \"1\"" >> etlegacy/etmain/etl_server.cfg
+RUN echo "set rconpassword \"etlegacy\"" >> etlegacy/etmain/etl_server.cfg
 
 # Port to expose
 EXPOSE 27960/udp
