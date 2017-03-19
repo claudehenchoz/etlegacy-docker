@@ -1,12 +1,8 @@
 # etlegacy-docker
 
-# Build
-
-    docker build -t etlegacy_img .
-
 # Run
 
-    docker run -p 27960:27960/udp etlegacy_img
+    docker run -p 27960:27960/udp schreckgestalt/etlegacy
 
 # Stop (All)
 
@@ -14,4 +10,8 @@
 
 # Delete
 
-    docker image rm etlegacy_img -f
+    docker image rm etlegacy -f
+
+# Build
+
+    docker build -t etlegacy .
