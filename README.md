@@ -6,7 +6,7 @@
 
 # Run
 
-    docker run -p 27960:27960 -p 27960:27960/udp etlegacy_img
+    docker run -p 27960:27960/udp etlegacy_img
 
 # Stop (All)
 
