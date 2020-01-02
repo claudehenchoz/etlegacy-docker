@@ -7,7 +7,7 @@
 FROM debian:latest
 
 # Set the file maintainer (your name - the file's author)
-MAINTAINER Claude Henchoz
+LABEL maintainer="claude.henchoz@gmail.com"
 
 # Install prereqs
 RUN apt-get update && apt-get install -y \
