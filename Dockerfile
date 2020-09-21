@@ -15,6 +15,7 @@ RUN echo "set sv_allowDownload \"1\"" >> etlegacy/etmain/etl_server.cfg  && \
     echo "set rconpassword \"etlegacy\"" >> etlegacy/etmain/etl_server.cfg
 
 EXPOSE 27960/udp
+VOLUME ["/etlegacy/etmain"]
 USER root
 WORKDIR /etlegacy
 ENTRYPOINT ./etlded_bot.sh
